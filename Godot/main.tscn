@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://djeb0cuoeaeet"]
+
+[ext_resource type="PackedScene" uid="uid://bb317dr4i7ocm" path="res://Models/FBX format/building-type-a.fbx" id="1_w48qg"]
+[ext_resource type="PackedScene" uid="uid://bficvv8xnrmtj" path="res://Models/FBX format/building-type-b.fbx" id="2_vivmo"]
+[ext_resource type="PackedScene" uid="uid://c0pcdqc16y17c" path="res://Models/FBX format/building-type-c.fbx" id="3_2cqfq"]
+[ext_resource type="PackedScene" uid="uid://ram4xtfpoaj0" path="res://Models/FBX format/building-type-d.fbx" id="4_yaehf"]
+[ext_resource type="PackedScene" uid="uid://dhr237150kk8a" path="res://Models/FBX format/building-type-e.fbx" id="5_074og"]
+[ext_resource type="PackedScene" uid="uid://dhhsm15y166hf" path="res://Models/FBX format/building-type-f.fbx" id="6_cegan"]
+[ext_resource type="PackedScene" uid="uid://b33c6cslx3k44" path="res://Models/FBX format/building-type-g.fbx" id="7_82xsv"]
+[ext_resource type="PackedScene" uid="uid://c2kadixfr2mdv" path="res://Models/FBX format/building-type-h.fbx" id="8_getpj"]
+[ext_resource type="PackedScene" uid="uid://roa46g0nw4if" path="res://Models/FBX format/building-type-i.fbx" id="9_ryguw"]
+[ext_resource type="PackedScene" uid="uid://b85t4r0he86wj" path="res://Models/FBX format/building-type-j.fbx" id="10_d13ii"]
+[ext_resource type="PackedScene" uid="uid://c8jsruk2l7hon" path="res://Models/FBX format/building-type-k.fbx" id="11_1u8w0"]
+[ext_resource type="PackedScene" uid="uid://b025nt5wtvhkt" path="res://Models/FBX format/planter.fbx" id="11_vivmo"]
+[ext_resource type="PackedScene" uid="uid://cbvwj4dsajmvt" path="res://Models/FBX format/building-type-l.fbx" id="12_0odxb"]
+[ext_resource type="PackedScene" uid="uid://dtg84mmikpntp" path="res://Models/FBX format/fence-3x3.fbx" id="13_lswn8"]
+[ext_resource type="PackedScene" uid="uid://q3ec55lx6cun" path="res://Models/FBX format/fence-1x3.fbx" id="14_a6jrf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xuqvo"]
+
+[node name="Main" type="Node3D" unique_id=897854532]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1979303809]
+transform = Transform3D(13.786833, 0, 0, 0, 0.10980177, 0, 0, 0, 11.796305, 1.3659811, -0.05917059, 0)
+mesh = SubResource("BoxMesh_xuqvo")
+
+[node name="building-type-a" parent="." unique_id=1082875036 instance=ExtResource("1_w48qg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3518052, 0, 2.9360867)
+
+[node name="building-type-b" parent="." unique_id=487883137 instance=ExtResource("2_vivmo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7292874)
+
+[node name="building-type-c" parent="." unique_id=351866998 instance=ExtResource("3_2cqfq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8357549, 0, 2.7487519)
+
+[node name="building-type-d" parent="." unique_id=573726535 instance=ExtResource("4_yaehf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.1028109)
+
+[node name="building-type-e" parent="." unique_id=238811690 instance=ExtResource("5_074og")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4341803, 0, 0)
+
+[node name="building-type-f" parent="." unique_id=1282593323 instance=ExtResource("6_cegan")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5458913, 0, 0)
+
+[node name="building-type-g" parent="." unique_id=1611272049 instance=ExtResource("7_82xsv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6355503, 0, -2.436481)
+
+[node name="fence-3x4" parent="building-type-g" unique_id=401691462 instance=ExtResource("13_lswn8")]
+transform = Transform3D(1.5364785, 0, 0, 0, 1.008, 0, 0, 0, 1.1076123, -0.08222103, 0, 0.2722125)
+
+[node name="fence-1x4" parent="building-type-g" unique_id=965503651 instance=ExtResource("14_a6jrf")]
+transform = Transform3D(-1.5364785, 0, -1.6591746e-07, 0, 1, 0, 2.3200181e-07, 0, -1.0988216, -0.082758665, 0, -0.60076094)
+
+[node name="building-type-h" parent="." unique_id=1776225115 instance=ExtResource("8_getpj")]
+
+[node name="fence-3x3" parent="building-type-h" unique_id=986921663 instance=ExtResource("13_lswn8")]
+transform = Transform3D(1.254, 0, 0, 0, 1.008, 0, 0, 0, 1.008, 0.045438945, 0, 0.35896862)
+
+[node name="fence-1x3" parent="building-type-h" unique_id=1509865947 instance=ExtResource("14_a6jrf")]
+transform = Transform3D(-1.254, 0, -1.509958e-07, 0, 1, 0, 1.8934873e-07, 0, -1, 0.045, 0, -0.43549442)
+
+[node name="planter" parent="building-type-h/fence-1x3" unique_id=1390162165 instance=ExtResource("11_vivmo")]
+transform = Transform3D(-0.79744816, 0, 1.2041133e-07, 0, 1, 0, -1.5099579e-07, 0, -1, -0.34528154, 0, -1.095791)
+
+[node name="building-type-i" parent="." unique_id=1816453159 instance=ExtResource("9_ryguw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3486676, 0, 2.706218)
+
+[node name="building-type-j" parent="." unique_id=845584365 instance=ExtResource("10_d13ii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9625127, 0, 0)
+
+[node name="building-type-k" parent="." unique_id=1837435040 instance=ExtResource("11_1u8w0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7712593, -4.7683716e-07, -2.2011044)
+
+[node name="building-type-l" parent="." unique_id=1006340955 instance=ExtResource("12_0odxb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4341717, -4.7683716e-07, -2.0407524)
