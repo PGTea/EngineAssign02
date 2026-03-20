@@ -17,6 +17,11 @@ public class Player : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
+    public void OnAttack()
+    {
+        Debug.Log("Attack!!");
+    }
+
     void Update()
     {
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
